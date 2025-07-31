@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="parent">
+    <header>
+        Number Guessing Game
+    </header>
+    <div class="container">
+        <h1 id="headline">Rate die Zahl zwischen 1 und 100!</h1>
+        <h2 id="triesDisplay"></h2>
+        <form onsubmit="guessTheNumber(); return false;">
+            <input type="number" id="guessInput" placeholder="Gib deine Zahl ein..." required>
+            <button id="guessButton">Raten</button>
+        </form>
+    </div>
+    <div">
+        <button id="rateTheGame" onclick="window.location.href='rate.html'"></button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+</html>
